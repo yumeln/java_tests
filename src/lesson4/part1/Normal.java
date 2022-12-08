@@ -5,7 +5,7 @@
         Если пользователь ввел число, которого нету в массиве, то выведите ошибку.*/
 
 
-package lesson4;
+package lesson4.part1;
 
 import java.util.Scanner;
 
@@ -29,10 +29,12 @@ public class Normal {
             if (randomNumbersArray[i] == number) {
 
                 System.out.println(i);
-
+                System.exit(99);
             }
-            System.out.println("Ошибка! Неправильное число.");
 
         }
+        System.out.println("Ошибка! Неправильное число.");
+
     }
+
 }
