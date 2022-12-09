@@ -9,4 +9,9 @@
 package lesson4.part2;
 
 public class Hard {
+    public static void main(String[] args) {
+        class Product {
+
+        }
+    }
 }
