@@ -15,7 +15,7 @@ public class Normal {
         randomNumbersArray = new int[10];
 
         for (int i = 0; i < randomNumbersArray.length; i++) {
-            int a = (int) (Math.random() * 80 + 20);
+            int a = (int) (Math.random() * 81 + 20);
             randomNumbersArray[i] = a;
             System.out.print(i + " ");
             System.out.println(a);
@@ -33,7 +33,7 @@ public class Normal {
             }
 
         }
-        System.out.println("Ошибка! Неправильное число.");
+        System.out.println("Ошибка! Неправильное число.");   // проверка на индекс который сачала -1 потом присваивается i
 
     }
 

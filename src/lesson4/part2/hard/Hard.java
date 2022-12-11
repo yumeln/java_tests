@@ -4,14 +4,11 @@
         Создать класс Basket, содержащий массив купленных товаров.
         Создать класс User, содержащий логин, пароль и объект класса Basket. Создать объект класса User.
 */
-
-
-package lesson4.part2;
+package lesson4.part2.hard;
 
 public class Hard {
     public static void main(String[] args) {
-        class Product {
+        User user1 = new User();
 
-        }
     }
 }

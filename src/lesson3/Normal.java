@@ -16,11 +16,9 @@ package lesson3;
 
 public class Normal {
     public static void main(String[] args) {
-        int[][] tableArr = new int[10][10];
         for (int i = 1; i < 10; i++) {
             for (int j = 1; j < 10; j++) {
-                tableArr[i][j] = i * j;
-                System.out.print(tableArr[i][j] + "  ");
+                System.out.print(i * j + "  ");
             }
             System.out.println();
         }

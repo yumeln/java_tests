@@ -10,7 +10,7 @@ public class Easy {
         newArray = new int[12];
 
         for (int i = 0; i < 12; i++) {
-            int a = (int) (Math.random() * 30);
+            int a = (int) (Math.random() * 31);
 
             newArray[i] = a;
             System.out.print(i + " ");
