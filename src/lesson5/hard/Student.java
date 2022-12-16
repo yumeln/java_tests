@@ -16,7 +16,22 @@ public class Student {
 
 
     double getScholarship() {
-        System.out.println("Студент получает стипендию " + sum);
+        if (averageMark == 5) {
+            sum = 1750;
+            System.out.println("Студент получает стипендию " + sum);
+
+        } else if (averageMark >= 4 && averageMark < 5 ) {
+            sum = 1710;
+            System.out.println("Студент получает стипендию " + sum);
+
+        } else {
+            System.out.println("Студент не получает стипендию ");
+        }
         return sum;
     }
+
+    void print() {
+        System.out.println("Студент");
+    }
+
 }

@@ -17,11 +17,20 @@
 
 package lesson5.hard;
 
+import lesson6.interfaceprintable.Printable;
+
 public class Main {
     public static void main(String[] args) {
-        Aspirant student = new Aspirant("jjj", "jn", "nkk", 6.8);
-        student.sum = 4;
+        Aspirant aspirant = new Aspirant("jjj", "jn", "nkk", 3);
+        aspirant.getScholarship();
+        Student student = new Student("ksjfn", "askhb", "skljf", 4);
         student.getScholarship();
+        Student[] mass = new Student[]{student,aspirant};
+
+        for (Student masss: mass) {
+            masss.print();
+        }
 
     }
+
 }
