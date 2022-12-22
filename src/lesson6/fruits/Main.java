@@ -15,12 +15,17 @@ public class Main {
     public static void main(String[] args) {
         Apple apple = new Apple();
         Pear pear = new Pear();
-        apple.price(34,45);
-        pear.price(1.2,4.4);
+        double sum = apple.price(3,5) + pear.price(1.2,4.4) + pear.price(1.2,5);
         Fruit apple2 = new Apple(2.4, "Такой-то");
         Apple apple3 = new Apple(3,"jkhgjhg");
-        System.out.println(Fruit.numberOfFruits);
         apple3.printManufacturerInfo();
         apple2.printManufacturerInfo();
+
+
+        System.out.println("Количество фруктов: " + Fruit.numberOfFruits);
+        System.out.println("Количество яблок: " + Apple.numberOfApples);
+        System.out.println("Стоимость фруктов: " + sum);
+
+
     }
 }

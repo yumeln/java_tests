@@ -6,7 +6,6 @@ public abstract class Fruit {
     static int numberOfFruits;
     String country;
 
-
     public static String getFruit() {
         return fruit;
     }
@@ -22,7 +21,7 @@ public abstract class Fruit {
     void printManufacturerInfo() {
     }
 
-    abstract void price(double weight, double pricePerKilo);
+    abstract double price(double weight, double pricePerKilo);
 
 
 }
