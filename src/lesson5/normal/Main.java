@@ -24,7 +24,7 @@ public class Main {
         Book book = new Book("Записки врача", "Булгаков");
 
         person1.takeBook(book);
-
-
+        person1.takeBook("kuygkuyg");
+        person1.takeBook(4);
     }
 }

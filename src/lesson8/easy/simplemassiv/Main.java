@@ -1,22 +1,26 @@
 /*Реализовать класс, содержащий методы для получения и добавления элемента и реализующий следующую структуру данных:
         Easy: массив (динамический)*/
 
-package lesson8.easy;
-
+package lesson8.easy.simplemassiv;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
         int[] array = {3, 5, 1, 8, 29, 50, 2};
+        getElement(array, 3);
         addElement(array,2);
 
     }
+
+    // получение элемента по индексу
     private static int getElement(int[] array, int i) {
         System.out.println("Элемент массива с индексом " + i + ": " + array[i]);
         return array[i];
     }
 
+
+    // добавление элемента
     private static int[] addElement(int[] array, int a) {
         int[] newArray = new int[array.length + 1];
         for (int i = 0; i < array.length; i++) {
