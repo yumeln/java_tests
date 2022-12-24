@@ -13,34 +13,32 @@ import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
-//        ArrayList<String> arrayContact = new ArrayList<>();
-//        arrayContact.add("name1");
-//        arrayContact.add("name2");
-//        arrayContact.add("name3");
-//        arrayContact.add("name4");
-//        arrayContact.add("name5");
 
         LinkedList<Contact> arrayContact = new LinkedList<>();
 
-//        Contact contact = new Contact("Petr", "9876533");
-        Contact contact = new Contact();
-        contact.name = "Petr";
-        contact.number = "98129736";
+        Contact contact1 = new Contact("Petr", "9876533");
+        Contact contact2 = new Contact("Nik", "9822233");
+        Contact contact3 = new Contact("Katya", "22276533");
 
-        arrayContact.addLast(contact);
+        arrayContact.addLast(contact1);
+        arrayContact.addLast(contact2);
+        arrayContact.addLast(contact3);
 
-        contact.name = "Alexander";
-        contact.number = "91111736";
-
-        arrayContact.addLast(contact);
-
-//        arrayContact.addLast(contact1.name);
-
+//        2. Распечатать содержимое массива используя for each.
 //          foreach
         for(Contact s : arrayContact) {
             System.out.println(s);
         }
-//        System.out.println(arrayContact.toString());
-//        arrayContact.forEach(System.out::println);
+
+//        3. Изменить номер первого контакта на новый.
+
+        arrayContact.get(0).number = "1111111";
+        System.out.println(arrayContact.toString());
+
+//        4. Удалить последний контакт из списка контактов.
+        arrayContact.removeLast();
+        arrayContact.forEach(System.out::println);
+
+
     }
 }
