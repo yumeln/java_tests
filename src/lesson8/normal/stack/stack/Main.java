@@ -1,6 +1,6 @@
 //стек
 
-package lesson8.normal.stack;
+package lesson8.normal.stack.stack;
 
 import java.util.Stack;
 
